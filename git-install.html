@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Git 安装页面仿制</title>
+  <style>
+    body {
+      background: #f8f8f5;
+      font-family: 'Microsoft YaHei', Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 32px 40px 40px 40px;
+      border-radius: 8px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .logo img {
+      height: 32px;
+      margin-right: 12px;
+    }
+    .logo-title {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #d73a49;
+    }
+    .nav {
+      float: left;
+      width: 120px;
+      margin-right: 32px;
+    }
+    .nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav li {
+      margin-bottom: 18px;
+      font-size: 1.1em;
+    }
+    .nav .active {
+      color: #d73a49;
+      font-weight: bold;
+    }
+    .main {
+      margin-left: 152px;
+    }
+    .main h2 {
+      font-size: 2em;
+      margin-bottom: 18px;
+      font-weight: 400;
+    }
+    .main .tab {
+      margin-bottom: 18px;
+    }
+    .main .tab span {
+      display: inline-block;
+      padding: 6px 18px;
+      margin-right: 8px;
+      background: #f8f8f5;
+      border-radius: 6px 6px 0 0;
+      color: #333;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .main .tab .active {
+      background: #fff;
+      color: #d73a49;
+      border-bottom: 2px solid #d73a49;
+      font-weight: bold;
+    }
+    .main .section {
+      font-size: 1.08em;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    .main .section a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    .main .section a:hover {
+      text-decoration: underline;
+    }
+    .main .highlight {
+      color: #d73a49;
+      font-weight: bold;
+    }
+    .main .actions {
+      display: flex;
+      gap: 48px;
+      margin-top: 32px;
+    }
+    .main .actions .action {
+      text-align: center;
+      width: 180px;
+    }
+    .main .actions .action img {
+      width: 64px;
+      margin-bottom: 12px;
+    }
+    .main .actions .action-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .main .actions .action-desc {
+      color: #666;
+      font-size: 0.98em;
+    }
+    @media (max-width: 1000px) {
+      .container { width: 98vw; padding: 16px; }
+      .nav { width: 90px; margin-right: 12px; }
+      .main { margin-left: 110px; }
+    }
+    @media (max-width: 700px) {
+      .container { width: 100vw; padding: 4px; }
+      .nav { float: none; width: 100%; margin: 0 0 12px 0; }
+      .main { margin-left: 0; }
+      .main .actions { flex-direction: column; gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://git-scm.com/images/logo@2x.png" alt="Git Logo">
+      <span class="logo-title">git</span>
+      <span style="margin-left:12px;color:#888;font-size:1em;">——分布式版本控制的集中化</span>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>大纲</li>
+        <li>学习</li>
+        <li>工具</li>
+        <li>参考</li>
+        <li class="active">安装</li>
+        <li>社区</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2>安装</h2>
+      <div class="tab">
+        <span class="active">窗口</span>
+        <span>macOS</span>
+        <span>Linux</span>
+        <span>源代码构建</span>
+      </div>
+      <div class="section">
+        <a href="#">点击这里下载</a> 最新（2.52.0）<span class="highlight">x64 Git for Windows</span> 版本。<span style="color:#888;">这是最新的维护版本。忘了14天前，Bugs在5月17日已修复。</span>
+      </div>
+      <div class="section">
+        <b>其他 Windows 版 Git 下载</b><br>
+        独立安装器<br>
+        <a href="#">Windows/x64 的 Git 设置</a><br>
+        <a href="#">Windows/ARM64 的 Git 设置</a><br>
+        便携版（“UumbDrive 版”）<br>
+        <a href="#">Windows/x64便携版Git</a><br>
+        <a href="#">Windows/ARM64 便携版的 Git 版本</a><br>
+      </div>
+      <div class="section">
+        <b>使用 Winget 工具</b><br>
+        如果你在系统安装了 <a href="#">Winget Tool</a>，或者在命令行提示符或 Powershell 输入这个命令：<br>
+        <span style="background:#f0f0f0;padding:2px 8px;border-radius:4px;display:inline-block;">winget install --id Git.Git -e --source winget</span>
+      </div>
+      <div class="section" style="color:#888;">
+        当前的最新版本是 2.52.0。你如果需要所有版本列表，可以去 <a href="#">所有版本列表</a>。
+      </div>
+      <div class="section">
+        <span class="highlight">现在怎么办？</span><br>
+        已经安装完毕了？恭喜你，现在已可即开始使用它了。
+      </div>
+      <div class="actions">
+        <div class="action">
+          <img src="https://git-scm.com/images/icons/book.svg" alt="book">
+          <div class="action-title">阅读这本书</div>
+          <div class="action-desc">深入阅读Pro Git 电子书，按自己的节奏学习每一章、节。</div>
+        </div>
+        <div class="action">
+          <img src="https://git-scm.com/images/icons/download.svg" alt="download">
+          <div class="action-title">下载图形界面</div>
+          <div class="action-desc">Windows平台各类图形界面工具，便捷管理项目。</div>
+        </div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+</body>
+</html>
